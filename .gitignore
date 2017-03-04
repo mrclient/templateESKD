@@ -1,0 +1,6 @@
+build/*.aux
+build/*.bbl
+build/*.blg
+build/*.log
+build/*.toc
+build/*.synctex.gz

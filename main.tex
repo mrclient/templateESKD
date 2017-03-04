@@ -1,0 +1,49 @@
+\documentclass[utf8, russian, hpadding=5mm, vpadding=15mm, floatsection, columnxxvi, columnxxxi, columnxxxii, equationsection, pointsection, footnoteasterisk]{eskdtext}
+
+%доп. пакеты
+\usepackage{amsfonts, amsmath, amssymb}	%Для математических штуковин
+\usepackage{wallpaper}					%Для вставки сторонних страниц		
+
+%доп. настройки
+\bibliographystyle{ugost2008}					%Стиль списка литературы
+\graphicspath{{./images/}{./extra_pdf_pages/}}	%Папки с картинками
+
+%на случай, если команда не определена
+\newcommand{\No}{\textnumero}
+
+%для определения форматирования нумерации элементов списка литературы
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1}
+\makeatother
+
+%для штампа	
+\ESKDtitle{{\Large Название работы}\\ \small Пояснительная записка}
+\ESKDsignature{КСУИ.102.4135.001 ПЗ}
+\ESKDgroup{\footnotesize Университет ИТМО\\Кафедра СУиИ\\гр.~P4135}
+\ESKDauthor{\resizebox{2.22cm}{\height}{Фамилия И.О.}}
+\ESKDchecker{\resizebox{2.22cm}{\height}{Фамилия И.О.}}
+\ESKDnormContr{\resizebox{2.22cm}{\height}{Фамилия И.О.}}
+\ESKDapprovedBy{\resizebox{2.22cm}{\height}{Фамилия И.О.}}
+
+%оступы от заголовков разделов и подразделов
+\ESKDsectSkip{section}{7mm}{7mm}
+\ESKDsectSkip{subsection}{5mm}{5mm}
+\ESKDsectSkip{subsubsection}{3mm}{3mm}
+
+
+%тело документа
+\begin{document}
+%\addtocounter{page}{1} %если в документ будут вставлены иные страницы (ТЗ и проч.)
+\input{title_pages}
+\ESKDthisStyle{formII}
+\tableofcontents
+\newpage
+\topmargin = 0 mm
+\input{introduction}
+\input{section_1}
+\input{conclusion}
+\renewcommand\refname{Список использованных источников}
+\providecommand*{\url}[1]{#1} %нужно для описания некоторых источников
+\bibliography{used_books}
+\input{appendix_1}
+\end{document}
