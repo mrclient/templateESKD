@@ -4,3 +4,4 @@ build/*.blg
 build/*.log
 build/*.toc
 build/*.synctex.gz
+build/*.out
