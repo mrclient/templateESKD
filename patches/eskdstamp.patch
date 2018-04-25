@@ -1,0 +1,12 @@
+--- eskdstamp.sty	2017-03-06 14:37:25.028704532 +0300
++++ eskdstamp.sty.norm	2017-03-06 14:38:20.244702900 +0300
+@@ -919,6 +919,9 @@
+     \ifESKD@twoside\ifodd\c@page\ESKDdrawColumnsXIX\fi%
+     \else\ESKDdrawColumnsXIX\fi}
+ \fi
++\ifESKD@enable@column@xxvi
++  \ESKDputOnStyle{formIIab}{columnxxvi}{\ESKDdrawColumnXXVI}
++\fi
+ \ifESKD@enable@column@xxxi
+   \ESKDputOnStyle{formIIab}{columnxxxi}{\ESKDdrawColumnXXXI}
+ \fi

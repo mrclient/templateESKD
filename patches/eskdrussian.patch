@@ -1,0 +1,11 @@
+--- eskdrussian.def	2017-03-06 14:43:05.868694461 +0300
++++ eskdrussian.def.norm	2017-03-06 14:43:26.792693843 +0300
+@@ -47,7 +47,7 @@
+ \newcommand{\ESKDcolumnXfVIname}{%
+   \cyr\CYRU\cyrt\cyrv.}
+ \newcommand{\ESKDcolumnXIVname}{%
+-  \cyr\CYRI\cyrz\cyrm.}
++  \resizebox{7mm}{\height}{\cyr\CYRI\cyrz\cyrm.}}
+ \newcommand{\ESKDcolumnXVname}{%
+   \cyr\CYRL\cyri\cyrs\cyrt}
+ \newcommand{\ESKDcolumnXVIname}{%
